@@ -29,6 +29,10 @@ Follow the Vercel prompts to select your account and create a project. Deploymen
 - styles.css: palette, typography, spacing, responsive layout.
 - script.js: copy-email interaction and current copyright year.
 
+## Copyright
+
+© 2026 Sahil Yadav. All rights reserved.
+
 Fonts load from Google Fonts with system fallbacks. The avatar loads from GitHub. The site remains usable if either service is unavailable.
 
 ## Content sources
