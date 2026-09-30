@@ -13,7 +13,15 @@
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="refined.css">
   <script src="script.js?v=2" defer></script>
 </head>
-<body>
+<body class="intro-active">
+  <div class="welcome-screen" id="welcome-screen" role="status" aria-label="Welcome. Hello." tabindex="0">
+    <div class="welcome-glow welcome-glow-side" aria-hidden="true"></div>
+    <div class="welcome-glow welcome-glow-bottom" aria-hidden="true"></div>
+    <svg class="welcome-hello" viewBox="0 0 520 210" aria-hidden="true">
+      <text class="hello-outline" x="50%" y="68%" text-anchor="middle">Hello</text>
+      <text class="hello-fill" x="50%" y="68%" text-anchor="middle">Hello</text>
+    </svg>
+  </div>
   <a class="skip" href="#main">Skip to content</a>
   <header class="header wrap">
     <a class="logo" href="#" aria-label="Sahil Yadav home">sy<span>.</span></a>
@@ -32,14 +40,14 @@
         </div>
         <aside class="profile-card" aria-label="Developer profile">
           <div class="card-caption"><span>THE DEVELOPER</span><span>01 / SY</span></div>
-          <img class="profile-avatar" src="https://avatars.githubusercontent.com/u/274592848" alt="Sahil Yadav’s GitHub avatar" width="180" height="180">
+          <img class="profile-avatar" src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="180" height="180" fetchpriority="high">
           <h2>Sahil Yadav</h2><p>Developer. Problem solver. Builder.</p>
           <div class="profile-stack"><span>React</span><span>Flutter</span><span>Node.js</span></div>
           <div class="profile-card-footer"><span>Open-source work</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">Explore GitHub</a></div>
         </aside>
       </div>
       <div class="hero-foot"><span>DESIGNED WITH INTENT. BUILT WITH CARE.</span><span>SCROLL TO DISCOVER</span></div>    </section>
-    <div class="stack-strip" aria-label="Core technologies"><div class="wrap"><span>React</span><span class="asterisk" aria-hidden="true">✳</span><span>TypeScript</span><span class="asterisk" aria-hidden="true">✳</span><span>Flutter</span><span class="asterisk" aria-hidden="true">✳</span><span>Node.js</span><span class="asterisk" aria-hidden="true">✳</span><span>Python</span></div></div>
+    <div class="stack-strip" aria-label="Core technologies"><div class="wrap"><span>React</span><span class="asterisk" aria-hidden="true">✳</span><span>TypeScript</span><span class="asterisk" aria-hidden="true">✳</span><span>Flutter</span><span class="asterisk" aria-hidden="true">✳</span><span>Node.js</span><span class="asterisk" aria-hidden="true">✳</span><span>C++</span><span class="asterisk" aria-hidden="true">✳</span><span>PHP</span><span class="asterisk" aria-hidden="true">✳</span><span>SQL</span><span class="asterisk" aria-hidden="true">✳</span><span>SQLite</span><span class="asterisk" aria-hidden="true">✳</span><span>Supabase</span></div></div>
     <section id="work" class="work wrap" aria-labelledby="work-title">
       <div class="section-head"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Selected projects<span class="lime">.</span></h2></div><p>A selection of my public projects.<br>Explore the thinking through the source.</p></div>
       <div class="projects">
@@ -71,8 +79,8 @@
       <div class="work-footer"><span>THERE’S MORE IN THE REPOSITORIES.</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">sahilyadav-01</a><a href="https://github.com/raosahil0" target="_blank" rel="noopener noreferrer">raosahil0</a></div>
     </section>
     <section id="about" class="about wrap" aria-labelledby="about-title">
-      <div class="about-intro"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2 id="about-title">The logic behind<br>the <span class="serif">interface.</span></h2><div class="identity"><img src="https://avatars.githubusercontent.com/u/274592848" alt="Sahil Yadav’s GitHub avatar" width="64" height="64" loading="lazy"><div><strong>Sahil Yadav</strong><span>Rajasthan, India</span></div></div></div>
-      <div class="about-content"><p class="about-lead">I’m a developer focused on clean interfaces and the engineering behind them.</p><p>My work spans responsive React websites, full-stack web applications, and mobile experiences with Flutter. I enjoy connecting the details people see with the systems they rely on.</p><p>I’m open to collaborating on useful, thoughtful open-source projects.</p><div class="skills"><div><h3>Interfaces</h3><p>React · Tailwind CSS · JavaScript · TypeScript</p></div><div><h3>Mobile</h3><p>Flutter · Dart · Riverpod</p></div><div><h3>Behind the scenes</h3><p>Node.js · Python · PostgreSQL · MongoDB</p></div><div><h3>Tools</h3><p>Git · Docker · AWS</p></div></div></div>
+      <div class="about-intro"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2 id="about-title">The logic behind<br>the <span class="serif">interface.</span></h2><div class="identity"><img src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="64" height="64" loading="lazy"><div><strong>Sahil Yadav</strong><span>Rajasthan, India</span></div></div></div>
+      <div class="about-content"><p class="about-lead">I’m a developer focused on clean interfaces and the engineering behind them.</p><p>My work spans responsive React websites, full-stack web applications, and mobile experiences with Flutter. I enjoy connecting the details people see with the systems they rely on.</p><p>I’m open to collaborating on useful, thoughtful open-source projects.</p><div class="skills"><div><h3>Interfaces</h3><p>React · Tailwind CSS · JavaScript · TypeScript</p></div><div><h3>Mobile</h3><p>Flutter · Dart · Riverpod</p></div><div><h3>Behind the scenes</h3><p>Node.js · Python · C++ · PHP · SQL · PostgreSQL · MongoDB · SQLite · Supabase</p></div><div><h3>Tools</h3><p>Git · Docker · AWS</p></div></div></div>
     </section>
     <section id="contact" class="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">03 / START A CONVERSATION</p><div class="contact-heading"><h2 id="contact-title">Something in mind?<br>Let’s <span class="serif">build it.</span></h2><a class="contact-button" href="mailto:sahil.ydv8290@gmail.com">Say hello <span aria-hidden="true">+</span></a></div><div class="contact-bottom"><a class="email" href="mailto:sahil.ydv8290@gmail.com">sahil.ydv8290@gmail.com</a><button id="copy-email" type="button">Copy email</button><span id="copy-status" role="status"></span><a href="tel:+918290500635">+91 8290500635</a><a href="https://medium.com/@raosahil8290" target="_blank" rel="noopener noreferrer">Medium</a><a href="https://www.instagram.com/raosahil._0/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="linkedin" href="https://www.linkedin.com/in/sahil-yadav-54a984214/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></div></div></section>
   </main>
