@@ -43,6 +43,7 @@ https://github.com/raosahil0
 Project summaries, technical skills, and background credentials are based on public GitHub profiles (sahilyadav-01 & raosahil0) and verified LinkedIn profile details (`https://www.linkedin.com/in/sahil-yadav-54a984214/`). Includes the flagship F.R.I.D.A.Y. AI Assistant project, formal Diploma in Computer Science & Engineering education, and IT technical support & full-stack software experience. The profile avatar comes from sahilyadav-01. Email, phone, Medium, and Instagram were supplied directly by the owner.
 
 ## Recent updates
+- Added dedicated **visual preview images** across all 6 projects in the Selected Projects showcase (neural HUD for F.R.I.D.A.Y., Avalonia remote session for SwiftDesk, API Explorer for API Client, dashboard streaks for Habit Tracker, multi-gateway checkout for SmartPay, and luxury event gallery for Yash Tent).
 - Added **SwiftDesk Remote Desktop** (`https://github.com/sahilyadav-01/SwiftDesk`): high-performance cross-platform remote support & desktop control suite (.NET 10 LTS, Avalonia UI, WebRTC P2P streaming, WebSockets signaling, remote input injection, chunked integrity-checked file transfer).
 - Added **F.R.I.D.A.Y. AI Assistant** (`https://github.com/sahilyadav-01/Project-Friday`) as the top flagship AI systems project with specialized banner styling and tags.
 - Added **Education & Experience** timeline credentials from LinkedIn (Diploma in CSE from Govt. Polytechnic College Neemrana, Technical Support & software training).
