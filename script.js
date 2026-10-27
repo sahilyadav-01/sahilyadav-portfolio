@@ -41,8 +41,10 @@ function closeWelcome() {
 }
 if (welcomeScreen) {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  welcomeTimer = setTimeout(closeWelcome, reducedMotion ? 900 : 3800);
+  welcomeTimer = setTimeout(closeWelcome, reducedMotion ? 700 : 2000);
   welcomeScreen.addEventListener('click', closeWelcome);
+  window.addEventListener('wheel', closeWelcome, { passive: true, once: true });
+  window.addEventListener('touchmove', closeWelcome, { passive: true, once: true });
   welcomeScreen.addEventListener('keydown', (event) => {
     if (event.key === 'Enter' || event.key === ' ') closeWelcome();
   });
