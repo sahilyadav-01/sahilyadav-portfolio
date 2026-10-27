@@ -1073,24 +1073,14 @@ h2 {
 
 /* Contact Section */
 .contact {
-  background: linear-gradient(135deg, var(--surface) 0%, var(--soft) 100%);
+  background: var(--surface);
   color: var(--text);
   border-block: 1px solid var(--line);
-  padding-block: 75px 50px;
-  position: relative;
-  overflow: hidden;
+  padding-block: 65px 40px;
 }
 
-.contact::before {
-  content: "";
-  position: absolute;
-  top: -40%;
-  right: -20%;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--lime-glow) 0%, transparent 70%);
-  pointer-events: none;
+.contact .eyebrow {
+  color: var(--muted);
 }
 
 .contact-heading {
@@ -1098,13 +1088,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  margin-bottom: 45px;
 }
 
 .contact h2 {
-  font-size: clamp(45px, 5.5vw, 70px);
-  letter-spacing: -2.5px;
-  line-height: 1.1;
+  font-size: 65px;
+  letter-spacing: -2px;
 }
 
 .contact h2 .serif {
@@ -1112,75 +1100,72 @@ h2 {
 }
 
 .contact-button {
+  border: 1px solid var(--line);
   background: var(--lime);
   color: var(--accent-ink);
-  border-radius: 10px;
-  padding: 16px 28px;
-  font-size: 15px;
+  border-radius: 7px;
+  padding: 14px 22px;
+  font-size: 14px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
-  box-shadow: 0 10px 30px var(--lime-glow);
-  transition: all 0.25s ease;
-  white-space: nowrap;
 }
 
 .contact-button:hover {
-  filter: brightness(1.1);
-  transform: translateY(-2px);
-  box-shadow: 0 14px 40px var(--lime-glow);
+  background: var(--lime);
+  filter: brightness(1.08);
   text-decoration: none;
 }
 
 .contact-bottom {
   border-top: 1px solid var(--line);
-  padding-top: 30px;
+  margin-top: 40px;
+  padding-top: 25px;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
 .contact-bottom .email {
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 18px;
   color: var(--text);
   text-decoration: none;
-}
-
-.contact-bottom .email:hover {
-  color: var(--lime);
-}
-
-.contact button {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  color: var(--muted);
-  border-radius: 8px;
-  padding: 7px 14px;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.contact button:hover {
-  border-color: var(--lime);
-  color: var(--text);
-  background: var(--surface-hover);
 }
 
 .contact-bottom > a {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--muted);
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .contact-bottom > a:hover {
   color: var(--lime);
+}
+
+.contact button {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: var(--soft);
+}
+
+.contact a:focus-visible,
+.contact button:focus-visible {
+  outline-color: var(--lime);
+}
+
+.linkedin {
+  margin-left: 0;
 }
 
 /* Footer */
