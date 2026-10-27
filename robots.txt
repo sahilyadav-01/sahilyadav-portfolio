@@ -1,0 +1,6 @@
+# robots.txt for https://sahilyadav-portfolio.vercel.app/
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sahilyadav-portfolio.vercel.app/sitemap.xml
