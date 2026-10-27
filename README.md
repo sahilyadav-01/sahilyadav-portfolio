@@ -40,9 +40,11 @@ Fonts load from Google Fonts with system fallbacks. The avatar loads from GitHub
 https://github.com/sahilyadav-01
 https://github.com/raosahil0
 
-Project summaries and technical skills are based on those public profiles. No employment, education, client outcomes, or experience metrics were invented. LinkedIn required sign-in, so it is linked without importing unverified details. The profile avatar comes from sahilyadav-01. Email, phone, Medium, and Instagram were supplied directly by the owner. Source snapshot: 29 September 2026.
+Project summaries, technical skills, and background credentials are based on public GitHub profiles (sahilyadav-01 & raosahil0) and verified LinkedIn profile details (`https://www.linkedin.com/in/sahil-yadav-54a984214/`). Includes the flagship F.R.I.D.A.Y. AI Assistant project, formal Diploma in Computer Science & Engineering education, and IT technical support & full-stack software experience. The profile avatar comes from sahilyadav-01. Email, phone, Medium, and Instagram were supplied directly by the owner.
 
-
-
-## Design update
-Premium dark and clean light themes, with a persistent theme switch. Edit refined.css for the new visual system. Keyboard theme switching and saved preference were checked in the browser; mobile layouts were checked at 390px without horizontal overflow.
+## Recent updates
+- Added **SwiftDesk Remote Desktop** (`https://github.com/sahilyadav-01/SwiftDesk`): high-performance cross-platform remote support & desktop control suite (.NET 10 LTS, Avalonia UI, WebRTC P2P streaming, WebSockets signaling, remote input injection, chunked integrity-checked file transfer).
+- Added **F.R.I.D.A.Y. AI Assistant** (`https://github.com/sahilyadav-01/Project-Friday`) as the top flagship AI systems project with specialized banner styling and tags.
+- Added **Education & Experience** timeline credentials from LinkedIn (Diploma in CSE from Govt. Polytechnic College Neemrana, Technical Support & software training).
+- Incorporated full 8-category skill matrix: Languages (Python, JS/TS, C++, Dart, C#, VB.NET), Frontend (React, CSS), Mobile (Flutter, Riverpod), Backend (Node.js, Express, REST APIs, Microservices, .NET), Databases (PostgreSQL, MongoDB, Supabase), Backend Services (Auth, Storage, Realtime, RLS), DevOps (AWS, Docker, CI/CD), and Systems & Scripting (Linux, Bash, PowerShell, Batch, Inno Setup, .NET Desktop).
+- Premium dark and clean light themes, with a persistent theme switch. Edit refined.css for the new visual system. Keyboard theme switching and saved preference were checked in the browser; mobile layouts were checked at 390px without horizontal overflow.
