@@ -111,22 +111,33 @@
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-layout">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="line"></span> FULL-STACK, AI &amp; FLUTTER DEVELOPER</div>
+          <div class="hero-status-pill">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span class="status-label">AVAILABLE FOR NEW OPPORTUNITIES</span>
+          </div>
           <h1 id="hero-title">Sahil Yadav<span class="lime">.</span></h1>
           <p class="hero-statement">From the first pixel<br>to the <span class="serif">last line of code.</span></p>
           <p class="hero-description">I build considered web, mobile, and autonomous AI experiences.<br>Clean interfaces. Thoughtful architecture. Useful software.</p>
-          <div class="hero-actions"><a class="button" href="#work">Discover my work</a><a class="secondary-button" href="#contact">Get in touch</a></div>
+          <div class="hero-actions">
+            <a class="button" href="#work"><span>Discover my work</span> <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="secondary-button" href="#contact">Get in touch</a>
+          </div>
           <div class="hero-location">RAJASTHAN, INDIA <span> / </span> BUILDING ACROSS WEB, MOBILE &amp; AI</div>
         </div>
         <aside class="profile-card" aria-label="Developer profile">
           <div class="card-caption"><span>THE DEVELOPER</span><span>01 / SY</span></div>
-          <img class="profile-avatar" src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="180" height="180" fetchpriority="high">
-          <h2>Sahil Yadav</h2><p>Developer. Problem solver. Builder.</p>
+          <div class="profile-avatar-wrap">
+            <img class="profile-avatar" src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="180" height="180" fetchpriority="high">
+            <span class="avatar-glow" aria-hidden="true"></span>
+          </div>
+          <h2>Sahil Yadav</h2>
+          <p>Developer. Problem solver. Builder.</p>
           <div class="profile-stack"><span>React</span><span>Flutter</span><span>Node.js</span><span>Python</span><span>C# / .NET</span></div>
-          <div class="profile-card-footer"><span>Open-source work</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">Explore GitHub</a></div>
+          <div class="profile-card-footer"><span>Open-source work</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a></div>
         </aside>
       </div>
-      <div class="hero-foot"><span>DESIGNED WITH INTENT. BUILT WITH CARE.</span><span>SCROLL TO DISCOVER</span></div>    </section>
+      <div class="hero-foot"><span>DESIGNED WITH INTENT. BUILT WITH CARE.</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
     <div class="stack-strip" aria-label="Core technologies"><div class="wrap"><span>React</span><span class="asterisk" aria-hidden="true">✳</span><span>Python</span><span class="asterisk" aria-hidden="true">✳</span><span>Flutter</span><span class="asterisk" aria-hidden="true">✳</span><span>Node.js</span><span class="asterisk" aria-hidden="true">✳</span><span>TypeScript</span><span class="asterisk" aria-hidden="true">✳</span><span>C# / .NET</span><span class="asterisk" aria-hidden="true">✳</span><span>C++</span><span class="asterisk" aria-hidden="true">✳</span><span>AWS</span><span class="asterisk" aria-hidden="true">✳</span><span>Docker</span><span class="asterisk" aria-hidden="true">✳</span><span>PostgreSQL</span><span class="asterisk" aria-hidden="true">✳</span><span>Supabase</span></div></div>
     <section id="work" class="work wrap" aria-labelledby="work-title">
       <div class="section-head"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Selected projects<span class="lime">.</span></h2></div><p>A selection of my public projects.<br>Explore the thinking through the source.</p></div>
@@ -136,7 +147,7 @@
             <div class="project-top"><span class="project-index">01</span><span class="featured-badge">★ FLAGSHIP</span><span class="category">AI SYSTEMS / DESKTOP &amp; WEB</span></div>
             <div class="project-title"><h3>F.R.I.D.A.Y.<br>AI Assistant</h3></div>
             <p>An autonomous personal AI assistant and desktop agent featuring neural real-time voice (STT &amp; TTS), Model Context Protocol (MCP) tool execution, system HUD telemetry, and cross-platform desktop integration.</p>
-            <div class="project-bottom"><div class="tags"><span>Python</span><span>FastAPI</span><span>React 19</span><span>TypeScript</span><span>Tauri 2</span><span>MCP</span></div><a href="https://github.com/sahilyadav-01/Project-Friday" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for F.R.I.D.A.Y. AI Assistant (opens in a new tab)</span></a></div>
+            <div class="project-bottom"><div class="tags"><span>Python</span><span>FastAPI</span><span>React 19</span><span>TypeScript</span><span>Tauri 2</span><span>MCP</span></div><a class="code-link" href="https://github.com/sahilyadav-01/Project-Friday" target="_blank" rel="noopener noreferrer"><span>View code</span> <span class="arrow-diag" aria-hidden="true">↗</span><span class="sr-only"> for F.R.I.D.A.Y. AI Assistant (opens in a new tab)</span></a></div>
           </div>
           <div class="project-media">
             <img src="assets/friday-core.jpg" alt="F.R.I.D.A.Y. Neural Core HUD Preview" width="280" height="280" loading="lazy">
@@ -147,7 +158,7 @@
             <div class="project-top"><span class="project-index">02</span><span class="featured-badge">★ SYSTEMS SHOWCASE</span><span class="category">SYSTEMS &amp; DESKTOP / REMOTE CONTROL</span></div>
             <div class="project-title"><h3>SwiftDesk<br>Remote Desktop</h3></div>
             <p>A high-performance cross-platform remote support and desktop control suite built with .NET 10 and Avalonia UI. Features low-latency WebRTC peer-to-peer screen streaming, real-time remote input injection, attended owner approval, and chunked integrity-checked file transfer.</p>
-            <div class="project-bottom"><div class="tags"><span>C#</span><span>.NET 10</span><span>Avalonia UI</span><span>WebRTC</span><span>WebSockets</span><span>ASP.NET Core</span></div><a href="https://github.com/sahilyadav-01/SwiftDesk" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for SwiftDesk Remote Desktop (opens in a new tab)</span></a></div>
+            <div class="project-bottom"><div class="tags"><span>C#</span><span>.NET 10</span><span>Avalonia UI</span><span>WebRTC</span><span>WebSockets</span><span>ASP.NET Core</span></div><a class="code-link" href="https://github.com/sahilyadav-01/SwiftDesk" target="_blank" rel="noopener noreferrer"><span>View code</span> <span class="arrow-diag" aria-hidden="true">↗</span><span class="sr-only"> for SwiftDesk Remote Desktop (opens in a new tab)</span></a></div>
           </div>
           <div class="project-media">
             <img src="assets/swiftdesk-preview.jpg" alt="SwiftDesk Remote Desktop Session Preview" width="280" height="280" loading="lazy">
@@ -160,7 +171,7 @@
           </div>
           <div class="project-title"><h3>Open Source<br>API Client</h3></div>
           <p>A GitHub dashboard built with Flutter, bringing clean architecture, Riverpod state management, and offline-first caching together.</p>
-          <div class="project-bottom"><div class="tags"><span>Flutter</span><span>Dart</span><span>Riverpod</span></div><a href="https://github.com/sahilyadav-01/Open-Source-API-Client" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for Open Source API Client (opens in a new tab)</span></a></div>
+          <div class="project-bottom"><div class="tags"><span>Flutter</span><span>Dart</span><span>Riverpod</span></div><a class="code-link" href="https://github.com/sahilyadav-01/Open-Source-API-Client" target="_blank" rel="noopener noreferrer"><span>View code</span> <span class="arrow-diag" aria-hidden="true">↗</span><span class="sr-only"> for Open Source API Client (opens in a new tab)</span></a></div>
         </article>
         <article class="project">
           <div class="project-top"><span class="project-index">04</span><span class="category">FULL-STACK / PRODUCTIVITY</span></div>
@@ -169,7 +180,7 @@
           </div>
           <div class="project-title"><h3>Habit<br>Tracker</h3></div>
           <p>A full-stack application for tracking daily habits, maintaining streaks, and measuring consistency over time with intuitive progress analytics.</p>
-          <div class="project-bottom"><div class="tags"><span>JavaScript</span><span>Node.js</span><span>Full-stack</span></div><a href="https://github.com/sahilyadav-01/habit-tracker" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for Habit Tracker (opens in a new tab)</span></a></div>
+          <div class="project-bottom"><div class="tags"><span>JavaScript</span><span>Node.js</span><span>Full-stack</span></div><a class="code-link" href="https://github.com/sahilyadav-01/habit-tracker" target="_blank" rel="noopener noreferrer"><span>View code</span> <span class="arrow-diag" aria-hidden="true">↗</span><span class="sr-only"> for Habit Tracker (opens in a new tab)</span></a></div>
         </article>
         <article class="project">
           <div class="project-top"><span class="project-index">05</span><span class="category">WEB / PAYMENTS</span></div>
@@ -178,7 +189,7 @@
           </div>
           <div class="project-title"><h3>SmartPay<br>Platform</h3></div>
           <p>A multi-gateway payment integration platform supporting secure checkout flows, merchant verification, and transaction processing.</p>
-          <div class="project-bottom"><div class="tags"><span>JavaScript</span><span>REST API</span><span>Payments</span></div><a href="https://github.com/sahilyadav-01/SmartPay-Multi-Gateway-Payment-Integration-Platform" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for SmartPay (opens in a new tab)</span></a></div>
+          <div class="project-bottom"><div class="tags"><span>JavaScript</span><span>REST API</span><span>Payments</span></div><a class="code-link" href="https://github.com/sahilyadav-01/SmartPay-Multi-Gateway-Payment-Integration-Platform" target="_blank" rel="noopener noreferrer"><span>View code</span> <span class="arrow-diag" aria-hidden="true">↗</span><span class="sr-only"> for SmartPay (opens in a new tab)</span></a></div>
         </article>
         <article class="project">
           <div class="project-top"><span class="project-index">06</span><span class="category">WEB / BUSINESS</span></div>
@@ -187,10 +198,10 @@
           </div>
           <div class="project-title"><h3>Yash Tent &amp;<br>Decoration</h3></div>
           <p>A modern React website for an event-services business, featuring online booking inquiries, dynamic portfolio showcase, and event catalogs.</p>
-          <div class="project-bottom"><div class="tags"><span>React</span><span>JavaScript</span><span>Responsive</span></div><a href="https://github.com/sahilyadav-01/Yash-Tent-Light-Decoration" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for Yash Tent &amp; Light Decoration (opens in a new tab)</span></a></div>
+          <div class="project-bottom"><div class="tags"><span>React</span><span>JavaScript</span><span>Responsive</span></div><a class="code-link" href="https://github.com/sahilyadav-01/Yash-Tent-Light-Decoration" target="_blank" rel="noopener noreferrer"><span>View code</span> <span class="arrow-diag" aria-hidden="true">↗</span><span class="sr-only"> for Yash Tent &amp; Light Decoration (opens in a new tab)</span></a></div>
         </article>
       </div>
-      <div class="work-footer"><span>THERE’S MORE IN THE REPOSITORIES.</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">sahilyadav-01</a><a href="https://github.com/raosahil0" target="_blank" rel="noopener noreferrer">raosahil0</a></div>
+      <div class="work-footer"><span>THERE’S MORE IN THE REPOSITORIES.</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">sahilyadav-01 ↗</a><a href="https://github.com/raosahil0" target="_blank" rel="noopener noreferrer">raosahil0 ↗</a></div>
     </section>
     <section id="about" class="about wrap" aria-labelledby="about-title">
       <div class="about-top">
@@ -240,38 +251,50 @@
         <div class="skills-full">
           <div class="skill-col">
             <div class="skill-group">
-              <h4>Interfaces</h4>
-              <p>React · Tailwind CSS · JavaScript · TypeScript · Responsive Design · CSS3</p>
+              <h4>Interfaces &amp; Frontend</h4>
+              <div class="skill-chips">
+                <span>React</span><span>TypeScript</span><span>JavaScript</span><span>Tailwind CSS</span><span>CSS3 / HTML5</span><span>Responsive Design</span>
+              </div>
             </div>
             <div class="skill-group">
-              <h4>Databases &amp; Services</h4>
-              <p>PostgreSQL · MongoDB · Supabase · SQLite · Auth · Realtime · Storage · Row-Level Security</p>
+              <h4>Databases &amp; Backend Services</h4>
+              <div class="skill-chips">
+                <span>PostgreSQL</span><span>MongoDB</span><span>Supabase</span><span>SQLite</span><span>Auth &amp; RLS</span><span>Realtime Storage</span>
+              </div>
             </div>
           </div>
           <div class="skill-col">
             <div class="skill-group">
-              <h4>Mobile</h4>
-              <p>Flutter · Dart · Riverpod · Cross-platform iOS/Android · UI/UX Implementation</p>
+              <h4>Mobile Development</h4>
+              <div class="skill-chips">
+                <span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Cross-platform iOS/Android</span><span>State Management</span><span>UI/UX Architecture</span>
+              </div>
             </div>
             <div class="skill-group">
               <h4>Cloud &amp; DevOps</h4>
-              <p>AWS (EC2, S3, Lambda, RDS) · Docker · Git-based CI/CD workflows · Linux</p>
+              <div class="skill-chips">
+                <span>AWS (EC2, S3, RDS, Lambda)</span><span>Docker</span><span>Git CI/CD</span><span>Linux / Bash</span>
+              </div>
             </div>
           </div>
           <div class="skill-col">
             <div class="skill-group">
-              <h4>Behind the scenes</h4>
-              <p>Node.js · Express · RESTful APIs · Microservices · Python · C++ · C# · .NET</p>
+              <h4>Backend &amp; Systems</h4>
+              <div class="skill-chips">
+                <span>Node.js</span><span>Express</span><span>Python</span><span>FastAPI</span><span>C# / .NET 10</span><span>C++</span><span>REST &amp; WebSockets</span>
+              </div>
             </div>
             <div class="skill-group">
-              <h4>Tools &amp; Scripting</h4>
-              <p>Git · Bash · PowerShell · Windows Batch · Visual Basic .NET · Inno Setup</p>
+              <h4>Scripting &amp; Desktop Tools</h4>
+              <div class="skill-chips">
+                <span>Git</span><span>PowerShell</span><span>Windows Batch</span><span>Visual Basic .NET</span><span>Inno Setup</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">03 / START A CONVERSATION</p><div class="contact-heading"><h2 id="contact-title">Something in mind?<br>Let’s <span class="serif">build it.</span></h2><a class="contact-button" href="mailto:sahil.ydv8290@gmail.com">Say hello <span aria-hidden="true">+</span></a></div><div class="contact-bottom"><a class="email" href="mailto:sahil.ydv8290@gmail.com">sahil.ydv8290@gmail.com</a><button id="copy-email" type="button">Copy email</button><span id="copy-status" role="status"></span><a href="tel:+918290500635">+91 8290500635</a><a href="https://medium.com/@raosahil8290" target="_blank" rel="noopener noreferrer">Medium</a><a href="https://www.instagram.com/raosahil._0/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="linkedin" href="https://www.linkedin.com/in/sahil-yadav-54a984214/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></div></div></section>
+    <section id="contact" class="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">03 / START A CONVERSATION</p><div class="contact-heading"><h2 id="contact-title">Something in mind?<br>Let’s <span class="serif">build it.</span></h2><a class="contact-button" href="mailto:sahil.ydv8290@gmail.com"><span>Say hello</span> <span aria-hidden="true">+</span></a></div><div class="contact-bottom"><a class="email" href="mailto:sahil.ydv8290@gmail.com">sahil.ydv8290@gmail.com</a><button id="copy-email" type="button">Copy email</button><span id="copy-status" role="status"></span><a href="tel:+918290500635">+91 8290500635</a><a href="https://medium.com/@raosahil8290" target="_blank" rel="noopener noreferrer">Medium ↗</a><a href="https://www.instagram.com/raosahil._0/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a class="linkedin" href="https://www.linkedin.com/in/sahil-yadav-54a984214/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></div></div></section>
   </main>
   <footer class="wrap footer"><a class="logo" href="#" aria-label="Back to top">sy<span>.</span></a><span>© <span id="year">2026</span> Sahil Yadav. All rights reserved.</span><a href="#main">Back to top</a></footer>
 </body>
