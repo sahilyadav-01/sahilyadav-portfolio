@@ -110,7 +110,12 @@
   </script>
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="refined.css">
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="refined.css">
   <script src="script.js?v=2" defer></script>
 </head>
 <body class="intro-active">
@@ -142,7 +147,7 @@
         </div>
         <aside class="profile-card" aria-label="Developer profile">
           <div class="card-caption"><span>THE DEVELOPER</span><span>01 / SY</span></div>
-          <img class="profile-avatar" src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="180" height="180" fetchpriority="high">
+          <img class="profile-avatar" src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="180" height="180" fetchpriority="high" decoding="async">
           <h2>Sahil Yadav</h2><p>Developer. Problem solver. Builder.</p>
           <div class="profile-stack"><span>React</span><span>Flutter</span><span>Node.js</span><span>Python</span><span>C# / .NET</span></div>
           <div class="profile-card-footer"><span>Open-source work</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">Explore GitHub</a></div>
@@ -161,7 +166,7 @@
             <div class="project-bottom"><div class="tags"><span>Python</span><span>FastAPI</span><span>React 19</span><span>TypeScript</span><span>Tauri 2</span><span>MCP</span></div><a href="https://github.com/sahilyadav-01/Project-Friday" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for F.R.I.D.A.Y. AI Assistant (opens in a new tab)</span></a></div>
           </div>
           <div class="project-media">
-            <img src="assets/friday-core.jpg" alt="F.R.I.D.A.Y. Neural Core HUD Preview" width="280" height="280" loading="lazy">
+            <img src="assets/friday-core.jpg" alt="F.R.I.D.A.Y. Neural Core HUD Preview" width="280" height="280" loading="lazy" decoding="async">
           </div>
         </article>
         <article class="project featured has-media">
@@ -172,13 +177,13 @@
             <div class="project-bottom"><div class="tags"><span>C#</span><span>.NET 10</span><span>Avalonia UI</span><span>WebRTC</span><span>WebSockets</span><span>ASP.NET Core</span></div><a href="https://github.com/sahilyadav-01/SwiftDesk" target="_blank" rel="noopener noreferrer">View code<span class="sr-only"> for SwiftDesk Remote Desktop (opens in a new tab)</span></a></div>
           </div>
           <div class="project-media">
-            <img src="assets/swiftdesk-preview.jpg" alt="SwiftDesk Remote Desktop Session Preview" width="280" height="280" loading="lazy">
+            <img src="assets/swiftdesk-preview.jpg" alt="SwiftDesk Remote Desktop Session Preview" width="280" height="280" loading="lazy" decoding="async">
           </div>
         </article>
         <article class="project">
           <div class="project-top"><span class="project-index">03</span><span class="category">DEVELOPER TOOLS / MOBILE</span></div>
           <div class="project-thumb">
-            <img src="assets/apiclient-preview.jpg" alt="Open Source API Client Preview" width="560" height="315" loading="lazy">
+            <img src="assets/apiclient-preview.jpg" alt="Open Source API Client Preview" width="560" height="315" loading="lazy" decoding="async">
           </div>
           <div class="project-title"><h3>Open Source<br>API Client</h3></div>
           <p>A GitHub dashboard built with Flutter, bringing clean architecture, Riverpod state management, and offline-first caching together.</p>
@@ -187,7 +192,7 @@
         <article class="project">
           <div class="project-top"><span class="project-index">04</span><span class="category">FULL-STACK / PRODUCTIVITY</span></div>
           <div class="project-thumb">
-            <img src="assets/habittracker-preview.jpg" alt="Habit Tracker Dashboard Preview" width="560" height="315" loading="lazy">
+            <img src="assets/habittracker-preview.jpg" alt="Habit Tracker Dashboard Preview" width="560" height="315" loading="lazy" decoding="async">
           </div>
           <div class="project-title"><h3>Habit<br>Tracker</h3></div>
           <p>A full-stack application for tracking daily habits, maintaining streaks, and measuring consistency over time with intuitive progress analytics.</p>
@@ -196,7 +201,7 @@
         <article class="project">
           <div class="project-top"><span class="project-index">05</span><span class="category">WEB / PAYMENTS</span></div>
           <div class="project-thumb">
-            <img src="assets/smartpay-preview.jpg" alt="SmartPay Platform Preview" width="560" height="315" loading="lazy">
+            <img src="assets/smartpay-preview.jpg" alt="SmartPay Platform Preview" width="560" height="315" loading="lazy" decoding="async">
           </div>
           <div class="project-title"><h3>SmartPay<br>Platform</h3></div>
           <p>A multi-gateway payment integration platform supporting secure checkout flows, merchant verification, and transaction processing.</p>
@@ -205,7 +210,7 @@
         <article class="project">
           <div class="project-top"><span class="project-index">06</span><span class="category">WEB / BUSINESS</span></div>
           <div class="project-thumb">
-            <img src="assets/yashtent-preview.jpg" alt="Yash Tent &amp; Decoration Website Preview" width="560" height="315" loading="lazy">
+            <img src="assets/yashtent-preview.jpg" alt="Yash Tent &amp; Decoration Website Preview" width="560" height="315" loading="lazy" decoding="async">
           </div>
           <div class="project-title"><h3>Yash Tent &amp;<br>Decoration</h3></div>
           <p>A modern React website for an event-services business, featuring online booking inquiries, dynamic portfolio showcase, and event catalogs.</p>
@@ -220,7 +225,7 @@
           <p class="eyebrow">02 / A LITTLE ABOUT ME</p>
           <h2 id="about-title">The logic behind<br>the <span class="serif">interface.</span></h2>
           <div class="identity">
-            <img src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="64" height="64" loading="lazy">
+            <img src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="64" height="64" loading="lazy" decoding="async">
             <div>
               <strong>Sahil Yadav</strong>
               <span>Rajasthan, India</span>

@@ -1,5 +1,4 @@
 /* Refined dual-theme visual system */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 :root{--bg:#0c0d10;--surface:#14161b;--text:#f0f1f5;--muted:#a2a6b1;--line:#2b2e37;--lime:#9caeff;--soft:#1a1e2b;--accent-ink:#101528;color-scheme:dark}
 html[data-theme="light"]{--bg:#fafbfe;--surface:#fff;--text:#182035;--muted:#596277;--line:#dce1ec;--lime:#445dd5;--soft:#edf0fa;--accent-ink:#fff;color-scheme:light}
 html,body{overflow-x:hidden;max-width:100vw}
@@ -8,7 +7,7 @@ body.intro-active{overflow:hidden}
 .welcome-screen{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,#15151d 0%,#03040a 42%,#02050c 68%,#06101c 100%);cursor:pointer;isolation:isolate;opacity:1;visibility:visible;transition:opacity .9s cubic-bezier(.4,0,.2,1),visibility .9s}
 .welcome-screen::after{content:"";position:absolute;inset:-15%;z-index:-1;background:radial-gradient(ellipse at 50% 48%,transparent 0 17%,#01020880 48%,#010208d4 82%);backdrop-filter:blur(44px);-webkit-backdrop-filter:blur(44px)}
 .welcome-screen.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
-.welcome-glow{position:absolute;z-index:-2;border-radius:50%;filter:blur(95px);animation:welcome-drift 5s ease-in-out infinite alternate}
+.welcome-glow{position:absolute;z-index:-2;border-radius:50%;filter:blur(95px);animation:welcome-drift 5s ease-in-out infinite alternate;will-change:transform}
 .welcome-glow-side{width:48%;height:72%;right:-24%;top:10%;background:#163977;opacity:.42;animation-delay:-2s}
 .welcome-glow-bottom{width:85%;height:28%;left:-7%;bottom:-18%;background:#164252;opacity:.32;animation-delay:-3s}
 .welcome-hello{width:min(430px,70vw);height:auto;overflow:visible;filter:drop-shadow(0 4px 17px #dcd9e42b)}
