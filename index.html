@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sahil Yadav — Full-Stack, AI Systems &amp; Flutter Developer | Portfolio</title>
   <meta name="description" content="Official portfolio of Sahil Yadav — Full-Stack, AI Systems, and Flutter Developer in Rajasthan, India. Explore autonomous AI agents, SwiftDesk remote desktop, web apps, and open-source software.">
-  <meta name="keywords" content="Sahil Yadav, sahil yadav, Sahil Yadav Developer, Sahil Yadav Portfolio, Full Stack Developer, Flutter Developer, AI Engineer, Python FastAPI, React, Node.js, C# .NET, Rajasthan India">
+  <meta name="keywords" content="Sahil Yadav, sahil yadav, Sahil Yadav Developer, Sahil Yadav Portfolio, Full Stack Developer, Flutter Developer, AI Engineer, Python FastAPI, React, Node.js, Firebase, Cloud Firestore, C# .NET, Rajasthan India">
   <meta name="author" content="Sahil Yadav">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="theme-color" content="#101110">
+  <meta name="theme-color" content="#0c0d10">
   <link rel="canonical" href="https://sahilyadav-portfolio.vercel.app/">
 
   <!-- Google Search Console Verification -->
@@ -61,6 +61,10 @@
           "FastAPI",
           "React",
           "Flutter",
+          "Firebase",
+          "Cloud Firestore",
+          "Firebase Auth",
+          "Firebase Hosting",
           "Node.js",
           "TypeScript",
           "C#",
@@ -118,7 +122,7 @@
   <link rel="stylesheet" href="refined.css">
   <script src="script.js?v=2" defer></script>
 </head>
-<body class="intro-active">
+<body class="intro-active" id="top">
   <div class="welcome-screen" id="welcome-screen" role="status" aria-label="Welcome. Hello." tabindex="0">
     <div class="welcome-glow welcome-glow-side" aria-hidden="true"></div>
     <div class="welcome-glow welcome-glow-bottom" aria-hidden="true"></div>
@@ -130,7 +134,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="header-bar" id="site-header">
     <div class="header wrap">
-      <a class="logo" href="#" aria-label="Sahil Yadav home">sy<span>.</span></a>
+      <a class="logo" href="#top" aria-label="Sahil Yadav home">sy<span>.</span></a>
       <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">+</span></a><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><span aria-hidden="true">◐</span> <span id="theme-label">Light</span></button></nav>
     </div>
   </header>
@@ -149,12 +153,13 @@
           <div class="card-caption"><span>THE DEVELOPER</span><span>01 / SY</span></div>
           <img class="profile-avatar" src="assets/sahil-profile-cropped.jpg" alt="Portrait of Sahil Yadav" width="180" height="180" fetchpriority="high" decoding="async">
           <h2>Sahil Yadav</h2><p>Developer. Problem solver. Builder.</p>
-          <div class="profile-stack"><span>React</span><span>Flutter</span><span>Node.js</span><span>Python</span><span>C# / .NET</span></div>
+          <div class="profile-stack"><span>React</span><span>Flutter</span><span>Firebase</span><span>Node.js</span><span>Python</span><span>C# / .NET</span></div>
           <div class="profile-card-footer"><span>Open-source work</span><a href="https://github.com/sahilyadav-01" target="_blank" rel="noopener noreferrer">Explore GitHub</a></div>
         </aside>
       </div>
-      <div class="hero-foot"><span>DESIGNED WITH INTENT. BUILT WITH CARE.</span><span>SCROLL TO DISCOVER</span></div>    </section>
-    <div class="stack-strip" aria-label="Core technologies"><div class="wrap"><span>React</span><span class="asterisk" aria-hidden="true">✳</span><span>Python</span><span class="asterisk" aria-hidden="true">✳</span><span>Flutter</span><span class="asterisk" aria-hidden="true">✳</span><span>Node.js</span><span class="asterisk" aria-hidden="true">✳</span><span>TypeScript</span><span class="asterisk" aria-hidden="true">✳</span><span>C# / .NET</span><span class="asterisk" aria-hidden="true">✳</span><span>C++</span><span class="asterisk" aria-hidden="true">✳</span><span>AWS</span><span class="asterisk" aria-hidden="true">✳</span><span>Docker</span><span class="asterisk" aria-hidden="true">✳</span><span>PostgreSQL</span><span class="asterisk" aria-hidden="true">✳</span><span>Supabase</span></div></div>
+      <div class="hero-foot"><span>DESIGNED WITH INTENT. BUILT WITH CARE.</span><span class="scroll-note">SCROLL TO DISCOVER</span></div>
+    </section>
+    <div class="stack-strip" aria-label="Core technologies"><div class="wrap"><span>React</span><span class="asterisk" aria-hidden="true">✳</span><span>Python</span><span class="asterisk" aria-hidden="true">✳</span><span>Flutter</span><span class="asterisk" aria-hidden="true">✳</span><span>Node.js</span><span class="asterisk" aria-hidden="true">✳</span><span>TypeScript</span><span class="asterisk" aria-hidden="true">✳</span><span>Firebase</span><span class="asterisk" aria-hidden="true">✳</span><span>C# / .NET</span><span class="asterisk" aria-hidden="true">✳</span><span>C++</span><span class="asterisk" aria-hidden="true">✳</span><span>AWS</span><span class="asterisk" aria-hidden="true">✳</span><span>Docker</span><span class="asterisk" aria-hidden="true">✳</span><span>PostgreSQL</span><span class="asterisk" aria-hidden="true">✳</span><span>Supabase</span></div></div>
     <section id="work" class="work wrap" aria-labelledby="work-title">
       <div class="section-head"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Selected projects<span class="lime">.</span></h2></div><p>A selection of my public projects.<br>Explore the thinking through the source.</p></div>
       <div class="projects">
@@ -272,17 +277,17 @@
             </div>
             <div class="skill-group">
               <h4>Databases &amp; Services</h4>
-              <p>PostgreSQL · MongoDB · Supabase · SQLite · Auth · Realtime · Storage · Row-Level Security</p>
+              <p>Firebase (Firestore, Realtime DB, Auth) · Supabase · PostgreSQL · MongoDB · SQLite · Storage · Row-Level Security</p>
             </div>
           </div>
           <div class="skill-col">
             <div class="skill-group">
               <h4>Mobile</h4>
-              <p>Flutter · Dart · Riverpod · Cross-platform iOS/Android · UI/UX Implementation</p>
+              <p>Flutter · Dart · Riverpod · Firebase SDK · Cross-platform iOS/Android · UI/UX Implementation</p>
             </div>
             <div class="skill-group">
               <h4>Cloud &amp; DevOps</h4>
-              <p>AWS (EC2, S3, Lambda, RDS) · Docker · Git-based CI/CD workflows · Linux</p>
+              <p>AWS (EC2, S3, Lambda, RDS) · Firebase Hosting · Docker · Git-based CI/CD workflows · Linux</p>
             </div>
           </div>
           <div class="skill-col">
@@ -298,10 +303,28 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="contact" aria-labelledby="contact-title"><div class="wrap"><p class="eyebrow">03 / START A CONVERSATION</p><div class="contact-heading"><h2 id="contact-title">Something in mind?<br>Let’s <span class="serif">build it.</span></h2><a class="contact-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=sahil.ydv8290@gmail.com" target="_blank" rel="noopener noreferrer">Say hello <span aria-hidden="true">+</span></a></div><div class="contact-bottom"><a class="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=sahil.ydv8290@gmail.com" target="_blank" rel="noopener noreferrer">sahil.ydv8290@gmail.com</a><button id="copy-email" type="button">Copy email</button><span id="copy-status" role="status"></span><a href="tel:+918290500635">+91 8290500635</a><a href="https://medium.com/@raosahil8290" target="_blank" rel="noopener noreferrer">Medium</a><a href="https://www.instagram.com/raosahil._0/" target="_blank" rel="noopener noreferrer">Instagram</a><a class="linkedin" href="https://www.linkedin.com/in/sahil-yadav-54a984214/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></div></div></section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="eyebrow">03 / START A CONVERSATION</p>
+        <div class="contact-heading">
+          <h2 id="contact-title">Something in mind?<br>Let’s <span class="serif">build it.</span></h2>
+          <a class="contact-button" href="mailto:sahil.ydv8290@gmail.com">Say hello <span aria-hidden="true">+</span></a>
+        </div>
+        <div class="contact-bottom">
+          <a class="email" href="mailto:sahil.ydv8290@gmail.com">sahil.ydv8290@gmail.com</a>
+          <button id="copy-email" type="button" aria-label="Copy email address to clipboard">Copy email</button>
+          <span id="copy-status" role="status" aria-live="polite"></span>
+          <a href="tel:+918290500635">+91 8290500635</a>
+          <a href="https://medium.com/@raosahil8290" target="_blank" rel="noopener noreferrer">Medium</a>
+          <a href="https://www.instagram.com/raosahil._0/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="linkedin" href="https://www.linkedin.com/in/sahil-yadav-54a984214/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="wrap footer">
-    <a class="logo" href="#" aria-label="Back to top">sy<span>.</span></a>
+    <a class="logo" href="#top" aria-label="Back to top">sy<span>.</span></a>
     <div class="footer-meta">
       <span>© <span id="year">2026</span> Sahil Yadav. All rights reserved.</span>
       <nav class="legal-links" aria-label="Legal navigation">
@@ -310,7 +333,7 @@
         <a href="terms.html">Terms of Service</a>
       </nav>
     </div>
-    <a class="back-to-top" href="#main">Back to top</a>
+    <a class="back-to-top" href="#top">Back to top</a>
   </footer>
 </body>
 </html>

@@ -2,7 +2,9 @@ const welcomeScreen = document.getElementById('welcome-screen');
 let welcomeTimer;
 
 const isLighthouse = /Lighthouse|HeadlessChrome|PageSpeed|bot|crawl/i.test(navigator.userAgent);
-if (isLighthouse && welcomeScreen) {
+const hasDirectHash = Boolean(window.location.hash && window.location.hash.length > 1);
+
+if ((isLighthouse || hasDirectHash) && welcomeScreen) {
   welcomeScreen.remove();
   document.body.classList.remove('intro-active');
 }
@@ -21,7 +23,7 @@ const greetings = [
 ];
 
 function setReloadGreeting() {
-  if (!welcomeScreen || isLighthouse) return;
+  if (!welcomeScreen || isLighthouse || hasDirectHash) return;
   let previous = -1;
   try { previous = Number(sessionStorage.getItem('previous-greeting')); } catch {}
   const choices = greetings.map((_, index) => index).filter(index => index !== previous);
@@ -36,7 +38,7 @@ function setReloadGreeting() {
   try { sessionStorage.setItem('previous-greeting', String(selectedIndex)); } catch {}
 }
 
-if (!isLighthouse) {
+if (!isLighthouse && !hasDirectHash) {
   setReloadGreeting();
 }
 
@@ -48,34 +50,48 @@ function closeWelcome() {
   setTimeout(() => welcomeScreen.remove(), 600);
 }
 
-if (welcomeScreen && !isLighthouse) {
+if (welcomeScreen && !isLighthouse && !hasDirectHash) {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   welcomeTimer = setTimeout(closeWelcome, reducedMotion ? 400 : 1100);
   welcomeScreen.addEventListener('click', closeWelcome);
   window.addEventListener('wheel', closeWelcome, { passive: true, once: true });
   window.addEventListener('touchmove', closeWelcome, { passive: true, once: true });
   welcomeScreen.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' || event.key === ' ') closeWelcome();
+    if (event.key === 'Enter' || event.key === ' ' || event.key === 'Escape') closeWelcome();
   });
 }
 
+// Copyright year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Email copy interaction
 const copyButton = document.getElementById('copy-email');
 const copyStatus = document.getElementById('copy-status');
-if (copyButton && copyStatus) {
+let copyResetTimeout;
+
+if (copyButton) {
   copyButton.addEventListener('click', async () => {
+    const emailToCopy = 'sahil.ydv8290@gmail.com';
     try {
-      await navigator.clipboard.writeText('sahil.ydv8290@gmail.com');
-      copyStatus.textContent = 'Email copied';
+      await navigator.clipboard.writeText(emailToCopy);
+      if (copyStatus) copyStatus.textContent = 'Email copied!';
       copyButton.textContent = 'Copied!';
+      copyButton.classList.add('is-copied');
+
+      clearTimeout(copyResetTimeout);
+      copyResetTimeout = setTimeout(() => {
+        copyButton.textContent = 'Copy email';
+        if (copyStatus) copyStatus.textContent = '';
+        copyButton.classList.remove('is-copied');
+      }, 2500);
     } catch {
-      copyStatus.textContent = 'Please select and copy the email address.';
+      if (copyStatus) copyStatus.textContent = 'Please select and copy manually.';
     }
   });
 }
 
+// Theme handling
 const themeToggle = document.getElementById('theme-toggle');
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
